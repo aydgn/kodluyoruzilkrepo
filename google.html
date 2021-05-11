@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google!</title>
+    <style>
+      body {
+        text-align: center;
+        width: 90%;
+        margin: 8px auto; /* Eski tasarımda da yukarıda boşluk var. Aynı görünüme gelmesi için margin verildi. */
+      }
+      .searchContainer {
+        background-color: #eee;
+      }
+      .blue {
+        display: flex; /* Eski table uygulamasına modern bir çözüm. Bunun yerine bütün child divlere display:inline verilebilirdi. */
+        gap: 2px;
+        margin-top: 2px;
+      }
+      .blue > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .left {
+        background: #7ee5da;
+        width: 40%; /* Eski uygulamada mavi alan tam ortalanarak üçe bölünmemişti. Ben oam ortalayarak üçe bölmek istedim. */
+      }
+      .middle {
+        background: #70ccc2;
+        width: 20%;
+      }
+      .right {
+        background: #62b3aa;
+        align-items: center;
+        width: 40%;
+      }
+      .right > input {
+        max-width: 185px;
+      }
+      .middle,
+      .right,
+      footer {
+        font-size: 13px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- LOGO -->
+    <img src="/google.jpg" alt="" />
+    <!-- GRİ ALAN -->
+    <div class="searchContainer">
+      Search the web using Google! <br />
+      <input type="text" size="40" />
+      <div>
+        <button>Google Search</button> <button>I'm feeling lucky</button>
+      </div>
+    </div>
+    <!-- MAVİ ALAN -->
+    <div class="blue">
+      <div class="left">
+        Special Searches
+        <a href="#">Standford Search</a>
+        <a href="#">Linux Search</a>
+      </div>
+      <div class="middle">
+        <a href="#">Help!</a>
+        <a href="#">About Google!</a>
+        <a href="#">Company Info</a>
+        <a href="#">Google! Logos</a>
+      </div>
+      <div class="right">
+        Get Google! <br />
+        updates monthly:
+        <input type="email" name="email" id="email" value="your e-mail" />
+
+        <!-- eski sitedeki value yerine modern placeholder kullanılabilirdi. Görünümü bozmamak adına value kullanıldı. -->
+        <div><button>Subscribe</button> <a href="#">Archive</a></div>
+      </div>
+    </div>
+    <!-- FOOTER -->
+    <footer><br />Copyright ©1998 Google Inc.</footer>
+  </body>
+</html>
