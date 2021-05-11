@@ -29,3 +29,5 @@ Pull requestler kabul edilir. Büyük değişiklikler için, lütfen önce neyi 
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
+
+Google 1998: https://codepen.io/aydgn/pen/MWpaRzX?editors=1100
