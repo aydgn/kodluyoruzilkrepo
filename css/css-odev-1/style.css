@@ -11,13 +11,14 @@ a {
 }
 a:hover {
   text-decoration: underline;
+  color: #fb8500;
 }
 header,
 footer {
   background: #023047;
   border-bottom: 5px solid #219ebc;
   color: #fff;
-  padding: 1rem;
+  padding: 0.5rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -32,6 +33,10 @@ footer {
   border-top: 5px solid #219ebc;
 }
 .responsive {
-  max-width: 100%;
+  width: 100%;
   height: auto;
+}
+article {
+  max-width: 768px;
+  margin: 0 auto;
 }
