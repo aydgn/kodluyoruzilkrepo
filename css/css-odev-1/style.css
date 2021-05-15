@@ -36,7 +36,14 @@ footer {
   width: 100%;
   height: auto;
 }
-article {
+article,
+main {
   max-width: 768px;
   margin: 0 auto;
+}
+#topLink {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
 }
