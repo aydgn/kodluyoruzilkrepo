@@ -36,14 +36,18 @@ footer {
   width: 100%;
   height: auto;
 }
-article,
+
 main {
-  max-width: 768px;
+  max-width: 80ch;
   margin: 0 auto;
+  padding: 1rem;
 }
 #topLink {
   position: fixed;
   bottom: 1rem;
   right: 1rem;
   font-size: 1.5rem;
+}
+#topLink:hover {
+  text-decoration: none;
 }
