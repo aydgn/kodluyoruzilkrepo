@@ -3,19 +3,19 @@
   margin: 10px;
   overflow: hidden;
   margin-right: 16px;
-  font-family: arial,sans-serif;
+  font-family: arial, sans-serif;
   font-size: 13px;
 }
 
-.headerli a {
+.header a {
   display: block;
   color: black;
   text-align: center;
-  padding: 5px 5px;
+  padding: 5px;
   text-decoration: none;
 }
 
-.headerli a:hover {
+.header a:hover {
   text-decoration: underline;
 }
 
@@ -34,10 +34,13 @@
   margin: 0 auto;
   margin-top: -77px;
   width: 582px;
+  border-radius: 24px;
+  align-items: center;
+
 }
 
 .search-area:hover {
-box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 1px 6px rgba(32, 33, 36, .28);
 }
 
 .search {
@@ -102,6 +105,8 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
   text-align: start;
   appearance: textfield;
   cursor: text;
+  border: 0;
+  width: 480px;
 }
 
 .googlesearch {
@@ -134,10 +139,12 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
   width: 100%;
   margin-left: -8px;
   line-height: 10px;
+  background: #f2f2f2;
 }
 
 .footerli {
   float: left;
+  list-style-type: none;
 }
 
 .footerli a {
@@ -154,4 +161,38 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
 
 .footerli a:hover {
   text-decoration: underline;
+}
+
+.panel nav ul {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.panel nav ul li {
+  padding: 0 0.5rem;
+}
+
+#profilepic {
+  border-radius: 99px;
+}
+
+.buttons {
+  text-align: center;
+}
+
+.buttons button {
+  background: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  margin: 11px 4px;
+  height: 36px;
+  line-height: 27px;
+}
+
+.buttons button:hover {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+  background-color: #f8f9fa;
+  border: 1px solid #dadce0;
+  color: #202124;
 }
